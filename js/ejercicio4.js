@@ -10,6 +10,8 @@ do{
     numero = parseInt(prompt("Introduce un número"));
     if(!isNaN(numero)){
         acumulador = acumulador + numero;
+    } else{
+        alert("No es un número. Introduce un número");
     }
 } while (confirm("¿Desea continuar?"));
 
