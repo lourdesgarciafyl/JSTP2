@@ -4,17 +4,17 @@
  descendente. Si, por ejemplo, la tabla es de 7×5 
  los números irán del 35 al 1. */
 
- let filas = parseInt(prompt("Ingrese un numero de filas"));
- let columnas = parseInt(prompt("Ingrese un numero de columnas"));
+ let filas = parseInt(prompt('Ingrese un numero de filas'));
+ let columnas = parseInt(prompt('Ingrese un numero de columnas'));
+ let total = filas * columnas;
 
- if(!isNaN){
-
- } document.write(
-`<table>
- <tbody>
-     <tr>
-         <td> 1 </td>
-         <td> 2 </td>
-     </tr>
- </tbody>
-</table>`)
+document.write(`<table>`);
+for(let indiceFilas = 0; indiceFilas<filas; indiceFilas++){
+    document.write(`<tr>`);
+    for(let indiceColumnas = 0; indiceColumnas<columnas; indiceColumnas++){
+        document.write(`<td> ${total} </td>`);
+        total--;
+    }
+    document.write(`</tr>`);
+}
+ document.write(`</table>`);
